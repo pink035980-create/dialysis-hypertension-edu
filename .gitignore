@@ -1,0 +1,22 @@
+﻿# Sensitive & Credentials
+.env
+*.key
+credentials.*
+
+# Operating System & Temporary Files
+desktop.ini
+Thumbs.db
+*.tmp
+~$*
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Test / Temporary Frames
+test_722.mp3
+test_sub_pos.png
+verify_frame_*.png
+concat_list*.txt
