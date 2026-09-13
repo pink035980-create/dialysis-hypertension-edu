@@ -1,4 +1,4 @@
-﻿# 交接檔（handoff.md）
+# 交接檔（handoff.md）
 
 > 任何 Agent、任何電腦接手前**必讀**；收工時**必更新**。本檔只放交接必需的精簡資訊，詳細脈絡放 Obsidian（若有 L3）。
 
@@ -13,11 +13,12 @@
   - 桌面：`血液透析高血壓衛教_3分鐘完整版.mp4`、`血液透析高血壓衛教.srt`、`HR_115_血液透析患者高血壓預防與管理_成大衛教單張.pdf`、`HR_115_血液透析患者高血壓預防與管理_成大衛教單張.docx`。
   - 下載資料夾：同上完整備份。
   - 專案目錄：`C:\AI\影片製作_透析高血壓衛教\`。
+  - GitHub 倉庫：`https://github.com/pink035980-create/dialysis-hypertension-edu`（私有倉庫，代碼與成果全數已推）。
 
 ## ➡️ 下一步
 1. **臨床播出與印製發放（若使用者要求發表）**：直接引導使用者以桌面之 PDF 進行 A4 雙面彩色列印，或將桌面之 MP4 影片上傳至 YouTube、LINE 官方帳號或成大透析室候診電視。
 2. **延伸透析衛教主題（若使用者要求新主題）**：如需製作「透析低鉀飲食」、「瘻管自我照護」等新衛教，可沿用現有成大樣式與影音合成指令，建議先提議「跑 RDQ 需求訪談」以確立規格。
-3. **專案 Git 倉庫初始化（若使用者希望做專案版控）**：若需跨裝置同步本專案原始碼，接手 Agent 可依 L2 流程執行：`git init`、設定 `windows.appendAtomically false`、建 `.gitignore`（排除 mp4/wav 二進位檔），建立私有 repo `pink035980-create/dialysis-hypertension-edu` 並 push。
+3. **換電腦接續作業**：在其他電腦只需執行 `git clone https://github.com/pink035980-create/dialysis-hypertension-edu.git`，即可完整取得所有原始碼、衛教單張與影音資產。
 
 ## ⚠️ 注意事項
 - **旁白發音規範**：第 4 幕「722 原則」發音已鎖定為「七二二」，切勿念成「七百二十二」；血壓數值 `120/80` 斜線切勿念成「分之」或「除以」，應念「收縮壓 120、舒張壓 80」或「大壓 120、小壓 80」。
@@ -30,4 +31,4 @@
 ## 🕐 最後更新
 - 時間：2026-09-13 21:55
 - 更新者：Antigravity @ 侯玉琴
-- Git push：—（本專案尚未啟用 git，全域技能已由 chezmoi 推送至 pink035980-create/dotfiles）
+- Git push：✅ 已推（pink035980-create/dialysis-hypertension-edu）

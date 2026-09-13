@@ -51,12 +51,13 @@ C:\AI\影片製作_透析高血壓衛教\
 - [x] 衛教單張去除 Emoji，解決跨平台/PDF 豆腐方格（□）缺字瑕疵
 - [x] 同步發布可編輯成大版型 Word 原稿（DOCX）至桌面並驗證開啟
 - [x] 全 Agent（Claude Code, Codex, Antigravity 2, Obsidian）跨電腦專案三口令技能同步更新
+- [x] 建立 GitHub 私有倉庫（pink035980-create/dialysis-hypertension-edu）並完成首度推送
 
 ## 同步層級狀態
 | 層級 | 項目 | 狀態 | 備註 |
 | :--- | :--- | :--- | :--- |
 | L1 | 本地工作區 | ✅ 已完成 | AGENTS.md + handoff.md 同步維護 |
-| L2 | GitHub 遠端備份 | ⚠️ 未啟用 | 本專案目錄未初始化 git 倉庫，暫無遠端同步 |
+| L2 | GitHub 遠端備份 | ✅ 已啟用 | 私有倉庫：[pink035980-create/dialysis-hypertension-edu](https://github.com/pink035980-create/dialysis-hypertension-edu) |
 | L3 | 第二大腦 Obsidian | ✅ 已同步 | 已同步至 `~/second-brain/透析高血壓衛教/專案工作流程.md` |
 
 ## 工作約定
