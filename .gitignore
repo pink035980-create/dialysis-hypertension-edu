@@ -1,4 +1,4 @@
-﻿# Sensitive & Credentials
+# Sensitive & Credentials
 .env
 *.key
 credentials.*
@@ -20,3 +20,30 @@ test_722.mp3
 test_sub_pos.png
 verify_frame_*.png
 concat_list*.txt
+
+# Intermediate render / test artifacts
+output/bubble*
+output/crop_*
+output/check_*
+output/elem_*
+output/exact_*
+output/frame_*
+output/p[0-9]_*
+output/t_*
+output/test_*
+output/verify_*
+output/theatrical_*
+output/grandpa_*
+output/manga_*
+output/clean_plate.png
+output/concat_*
+output/part*
+output/pose3_*
+output/table_full_area.png
+output/樣片_*
+output/scene_*.mp3
+output/slide_06_sub*.png
+output/血液透析患者高血壓衛教_全片10幕無縫完整版.mp4
+output/血液透析患者高血壓衛教_全片10幕無縫完整版.srt
+slides/test_*
+slides/*_preview.png
