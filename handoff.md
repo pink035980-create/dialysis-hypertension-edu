@@ -58,6 +58,6 @@
 - **第二大腦筆記**：歷史架構決策（ADR-001 ~ ADR-004）與踩坑紀錄維護在 Obsidian：`~/second-brain/透析高血壓衛教/專案工作流程.md`。
 
 ## 🕐 最後更新
-- 時間：2026-09-16 00:37
+- 時間：2026-09-16 00:55
 - 更新者：Antigravity 2 @ 侯玉琴
-- Git push：✅ 已推（pink035980-create/dialysis-hypertension-edu，commit af2c5d4）
+- Git push：✅ 已推（pink035980-create/dialysis-hypertension-edu，commit 5db5761，公開倉庫）
