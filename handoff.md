@@ -27,9 +27,9 @@
   3. `第9幕_服藥四部曲日式漫畫全景圖卡.png`（高解析衛教圖卡）
   4. `HR_115_血液透析患者高血壓預防與管理_成大衛教單張.pdf`（雙面 A4 列印級 PDF）
   5. `HR_115_血液透析患者高血壓預防與管理_成大衛教單張.docx`（成大透析室專用 Word 可編輯檔）
-- **專案目錄與 GitHub 私有倉庫**：
+- **專案目錄與 GitHub 公開倉庫**：
   - 本地路徑：`C:\AI\影片製作_透析高血壓衛教\`
-  - GitHub 私有倉庫網址：`https://github.com/pink035980-create/dialysis-hypertension-edu`
+  - GitHub 公開倉庫網址（所有人皆可免登入直接存取）：`https://github.com/pink035980-create/dialysis-hypertension-edu`
 
 ## ➡️ 接手 Agent 下一步要做什麼
 任何 Agent（Claude Code、Codex、AntiGravity 2 等）接手後，請先詢問或依使用者需求執行以下方向：

@@ -63,7 +63,7 @@ C:\AI\影片製作_透析高血壓衛教\
 | 層級 | 項目 | 狀態 | 備註 |
 | :--- | :--- | :--- | :--- |
 | L1 | 本地工作區 | ✅ 已完成 | AGENTS.md + handoff.md 同步維護 |
-| L2 | GitHub 遠端備份 | ✅ 已啟用 | 私有倉庫：[pink035980-create/dialysis-hypertension-edu](https://github.com/pink035980-create/dialysis-hypertension-edu) |
+| L2 | GitHub 遠端備份 | ✅ 已公開 | 公開倉庫 (Public)：[pink035980-create/dialysis-hypertension-edu](https://github.com/pink035980-create/dialysis-hypertension-edu) |
 | L3 | 第二大腦 Obsidian | ✅ 已同步 | 已同步至 `~/second-brain/透析高血壓衛教/專案工作流程.md` |
 
 ## 工作約定
