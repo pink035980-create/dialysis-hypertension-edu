@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成大醫院血液透析室・多語言高血壓衛教影音中心</title>
+    <style>
+        :root {
+            --primary: #0284c7;
+            --primary-dark: #0369a1;
+            --ncku-blue: #075985;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-sub: #475569;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', 'Microsoft JhengHei', sans-serif; }
+        body { background: var(--bg); color: var(--text-main); min-height: 100vh; padding: 24px 16px; }
+        .container { max-width: 1100px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 24px; padding: 20px; background: linear-gradient(135deg, #075985 0%, #0284c7 100%); color: white; border-radius: 16px; box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.25); }
+        header h1 { font-size: 26px; font-weight: 800; margin-bottom: 8px; letter-spacing: 0.5px; }
+        header p { font-size: 15px; opacity: 0.92; }
+        
+        .main-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
+        
+        .player-card { background: var(--card-bg); border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid #e2e8f0; }
+        .video-container { position: relative; width: 100%; aspect-ratio: 16/9; background: #000; display: flex; align-items: center; justify-content: center; }
+        video { width: 100%; height: 100%; object-fit: contain; }
+        
+        .player-info { padding: 16px 20px; background: #f1f5f9; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+        .current-title { font-size: 17px; font-weight: 700; color: #0f172a; display: flex; align-items: center; gap: 8px; }
+        .badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 700; color: white; }
+        .badge-zh { background: #d97706; }
+        .badge-en { background: #2563eb; }
+        .badge-id { background: #059669; }
+        .badge-vn { background: #dc2626; }
+        
+        .lang-tabs { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; margin-top: 16px; }
+        .tab-btn { background: white; border: 2px solid #e2e8f0; border-radius: 12px; padding: 14px 16px; text-align: left; cursor: pointer; transition: all 0.2s ease; display: flex; flex-direction: column; gap: 4px; }
+        .tab-btn:hover { border-color: var(--primary); transform: translateY(-2px); box-shadow: 0 6px 16px rgba(2, 132, 199, 0.12); }
+        .tab-btn.active { border-color: var(--primary); background: #f0f9ff; box-shadow: 0 4px 14px rgba(2, 132, 199, 0.15); }
+        .tab-btn .title { font-size: 15px; font-weight: 700; color: var(--text-main); display: flex; align-items: center; justify-content: space-between; }
+        .tab-btn .desc { font-size: 12px; color: var(--text-sub); }
+        .tab-btn .time { font-size: 12px; font-weight: 600; color: var(--primary); }
+
+        .docs-section { margin-top: 24px; background: white; border-radius: 16px; padding: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid #e2e8f0; }
+        .docs-section h2 { font-size: 18px; color: #075985; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+        .doc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+        .doc-card { display: flex; align-items: center; gap: 14px; padding: 14px 18px; border-radius: 12px; background: #f8fafc; border: 1px solid #e2e8f0; text-decoration: none; color: inherit; transition: all 0.2s; }
+        .doc-card:hover { background: #f0fdf4; border-color: #22c55e; transform: translateY(-2px); }
+        .doc-icon { font-size: 28px; }
+        .doc-text .name { font-weight: 700; font-size: 14px; }
+        .doc-text .format { font-size: 12px; color: #64748b; }
+
+        footer { text-align: center; margin-top: 30px; font-size: 13px; color: #94a3b8; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>國立成功大學醫學院附設醫院 血液透析室</h1>
+        <p>血液透析患者高血壓預防與管理・多語言全片 10 幕無縫衛教影音中心</p>
+    </header>
+
+    <div class="main-grid">
+        <div class="player-card">
+            <div class="video-container">
+                <video id="videoPlayer" controls autoplay preload="auto">
+                    <source id="videoSource" src="成大血液透析高血壓衛教_最終成果專區/1_中文完整版_血液透析高血壓衛教(4分28秒).mp4" type="video/mp4">
+                    您的瀏覽器不支援 HTML5 視訊播放。
+                </video>
+            </div>
+            <div class="player-info">
+                <div class="current-title">
+                    <span id="langBadge" class="badge badge-zh">中文版</span>
+                    <span id="currentVideoTitle">中文完整版（日式衛教漫畫風・在地長輩專用）</span>
+                </div>
+                <div style="font-size: 13px; color: #64748b;">
+                    1080P Full HD / 25fps / 廣播級無縫串接
+                </div>
+            </div>
+        </div>
+
+        <div class="lang-tabs">
+            <div class="tab-btn active" onclick="switchVideo('zh')">
+                <div class="title">
+                    <span>🇹🇼 中文醫療解說版</span>
+                    <span class="time">4分28秒</span>
+                </div>
+                <div class="desc">日式連續漫畫風・成大護理師曉臻擬真女聲</div>
+            </div>
+
+            <div class="tab-btn" onclick="switchVideo('en')">
+                <div class="title">
+                    <span>🇺🇸 英語國際解說版</span>
+                    <span class="time">5分37秒</span>
+                </div>
+                <div class="desc">English Standard・中英雙語對照字幕・Jenny配音</div>
+            </div>
+
+            <div class="tab-btn" onclick="switchVideo('id')">
+                <div class="title">
+                    <span>🇮🇩 印尼語醫療解說版</span>
+                    <span class="time">7分16秒</span>
+                </div>
+                <div class="desc">Bahasa Indonesia・Cuci Darah・Gadis配音</div>
+            </div>
+
+            <div class="tab-btn" onclick="switchVideo('vn')">
+                <div class="title">
+                    <span>🇻🇳 越南語醫療解說版</span>
+                    <span class="time">5分13秒</span>
+                </div>
+                <div class="desc">Tiếng Việt・Lọc Máu・Hoài My配音</div>
+            </div>
+        </div>
+
+        <div class="docs-section">
+            <h2>📄 成大標準版型衛教單張與完整指導手冊</h2>
+            <div class="doc-grid">
+                <a class="doc-card" href="成大血液透析高血壓衛教_最終成果專區/成大衛教單張_雙頁列印版.pdf" target="_blank">
+                    <div class="doc-icon">📕</div>
+                    <div class="doc-text">
+                        <div class="name">成大衛教單張 (雙頁版)</div>
+                        <div class="format">PDF 檔案・300 DPI A4 臨床列印級</div>
+                    </div>
+                </a>
+
+                <a class="doc-card" href="成大血液透析高血壓衛教_最終成果專區/成大衛教單張_Word編輯版.docx" target="_blank">
+                    <div class="doc-icon">📘</div>
+                    <div class="doc-text">
+                        <div class="name">成大衛教單張 (Word 原稿)</div>
+                        <div class="format">DOCX 檔案・臨床自由編輯版型</div>
+                    </div>
+                </a>
+
+                <a class="doc-card" href="成大血液透析高血壓衛教_最終成果專區/血液透析患者高血壓預防與管理_完整衛教手冊.docx" target="_blank">
+                    <div class="doc-icon">📙</div>
+                    <div class="doc-text">
+                        <div class="name">完整衛教指導專書 (全六篇)</div>
+                        <div class="format">Word 格式手冊專書</div>
+                    </div>
+                </a>
+
+                <a class="doc-card" href="成大血液透析高血壓衛教_最終成果專區/" target="_blank">
+                    <div class="doc-icon">📁</div>
+                    <div class="doc-text">
+                        <div class="name">瀏覽全部成果資料夾</div>
+                        <div class="format">包含 4 語影片、外掛字幕與全手冊</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        國立成功大學醫學院附設醫院 血液透析室 (06) 235-3535 分機 2591 ｜ 衛教版權所有
+    </footer>
+</div>
+
+<script>
+    const videos = {
+        'zh': {
+            title: '中文完整版（日式衛教漫畫風・在地長輩專用）',
+            badge: '中文版',
+            badgeClass: 'badge badge-zh',
+            src: '成大血液透析高血壓衛教_最終成果專區/1_中文完整版_血液透析高血壓衛教(4分28秒).mp4'
+        },
+        'en': {
+            title: '英語國際版（International Medical Standard・中英雙語）',
+            badge: 'English',
+            badgeClass: 'badge badge-en',
+            src: '成大血液透析高血壓衛教_最終成果專區/2_英語國際版_血液透析高血壓衛教(5分37秒).mp4'
+        },
+        'id': {
+            title: '印尼語版（Bahasa Indonesia・Cuci Darah・中印雙語）',
+            badge: 'Indonesia',
+            badgeClass: 'badge badge-id',
+            src: '成大血液透析高血壓衛教_最終成果專區/3_印尼語完整版_血液透析高血壓衛教(7分16秒).mp4'
+        },
+        'vn': {
+            title: '越南語版（Tiếng Việt・Lọc Máu・中越雙語）',
+            badge: 'Tiếng Việt',
+            badgeClass: 'badge badge-vn',
+            src: '成大血液透析高血壓衛教_最終成果專區/4_越南語完整版_血液透析高血壓衛教(5分13秒).mp4'
+        }
+    };
+
+    function switchVideo(lang) {
+        const player = document.getElementById('videoPlayer');
+        const source = document.getElementById('videoSource');
+        const badge = document.getElementById('langBadge');
+        const title = document.getElementById('currentVideoTitle');
+        const tabs = document.querySelectorAll('.tab-btn');
+
+        tabs.forEach(t => t.classList.remove('active'));
+        const activeIdx = ['zh', 'en', 'id', 'vn'].indexOf(lang);
+        if (activeIdx >= 0) tabs[activeIdx].classList.add('active');
+
+        const info = videos[lang];
+        badge.className = info.badgeClass;
+        badge.textContent = info.badge;
+        title.textContent = info.title;
+
+        source.src = info.src;
+        player.load();
+        player.play().catch(e => console.log('Autoplay handled:', e));
+    }
+</script>
+
+</body>
+</html>
