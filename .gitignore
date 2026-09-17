@@ -1,4 +1,4 @@
-# Sensitive & Credentials
+﻿# Sensitive & Credentials
 .env
 *.key
 credentials.*
@@ -15,13 +15,20 @@ __pycache__/
 *.pyc
 *.pyo
 
-# Test / Temporary Frames
+# Archive & Draft Folders
+歷史草稿與過程檔案封存/
+output/en_scenes/
+output/id_scenes/
+output/vn_scenes/
+output/vn_part_*.mp3
+output/vn_scene*.mp3
+output/vn_scene*.json
+
+# Intermediate render / test artifacts
 test_722.mp3
 test_sub_pos.png
 verify_frame_*.png
 concat_list*.txt
-
-# Intermediate render / test artifacts
 output/bubble*
 output/crop_*
 output/check_*
