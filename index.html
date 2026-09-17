@@ -1,6 +1,9 @@
 ﻿<!DOCTYPE html>
 <html lang="zh-TW">
 <head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>成大醫院血液透析室・血液透析高血壓多語言衛教影片</title>
@@ -52,6 +55,16 @@
         .doc-text .name { font-weight: 700; font-size: 14px; }
         .doc-text .format { font-size: 12px; color: #64748b; }
 
+                .footer-hospital { font-weight: 700; margin-bottom: 4px; color: #475569; }
+        .footer-phone { color: #64748b; font-size: 13px; }
+        .nowrap { white-space: nowrap; }
+        @media (max-width: 640px) {
+            header h1 { font-size: 20px; line-height: 1.35; }
+            header p { font-size: 13px; }
+            .footer-hospital { font-size: 13px; }
+            .footer-phone { font-size: 12px; }
+            .player-info { flex-direction: column; align-items: flex-start; gap: 6px; }
+        }
         footer { text-align: center; margin-top: 30px; font-size: 13px; color: #94a3b8; }
     </style>
 </head>
@@ -139,8 +152,9 @@
         </div>
     </div>
 
-    <footer>
-        國立成功大學醫學院附設醫院 血液透析室 (06) 235-3535 分機 2591 ｜ 衛教版權所有
+        <footer>
+        <div class="footer-hospital">國立成功大學醫學院附設醫院 血液透析室</div>
+        <div class="footer-phone">諮詢專線：<span class="nowrap">(06) 235-3535 分機 2591</span> ｜ 衛教版權所有</div>
     </footer>
 </div>
 
